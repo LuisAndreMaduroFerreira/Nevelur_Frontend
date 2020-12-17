@@ -1,0 +1,91 @@
+:root {
+    --primary: rgb(1, 10, 19);
+    --secondary: rgb(1, 14, 21);
+    --tertiary: rgb(1, 12, 22);
+    --quarternary: rgb(5, 25, 39);
+    --quinary: rgb(7, 31, 45);
+    --senary: rgb(7,40,55);
+    --septenary: rgb(8, 49, 63);
+    
+    --gold_border_edge: rgb(186, 141, 66);
+    --gold_border_interior_edge: rgb(115, 105, 65);
+    --gold_border_interior: rgb(80, 69, 32);
+  
+    --contrast_bright_blue_lighter: rgb(62, 213, 255);
+    --contrast_bright_blue_medium: rgb(52, 182, 254);
+    --contrast_bright_blue_darker: rgb(37, 164, 254);
+  
+    --darker_base: rgb(23, 29, 28);
+  }
+
+  .suggestion-card-container {
+    display: grid;
+    width: 200px;
+    grid-template-columns: 200px;
+    grid-template-rows: 150px 75px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    grid-template-areas: "image" "text";
+    background-color: rgba(0,0,0,0);
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    z-index:7;
+  }
+
+  .suggestion-card-container:hover{
+    transform: scale(1.05);
+    transition: 0.2s ease-in;
+    box-shadow: 5px 5px 15px var(--tertiary);
+  }
+
+  .suggestion-card-image{
+    grid-area: image;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    background-color: var(--darker_base);
+}
+
+  .suggestion-card-image img {
+    margin: auto;
+    max-width:200px;
+    max-height: 200px;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    opacity: 0.85;
+    background-color: var(--senary);
+  }
+
+  .suggestion-card-text-info {
+    width: 200px;
+    height: 75px;
+    grid-area:text;
+    color: whitesmoke !important;
+    background-color: var(--darker_base);   
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    }
+
+  .suggestion-card-text-info h2{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    vertical-align: text-bottom;
+    width: 200px;
+    overflow: hidden;
+    padding-top: 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 40px;
+    font-size: 28px;
+    font-weight: 300;
+    margin-left: 7px;
+  }
+
+  .suggestion-card-text-info h4{
+    margin-bottom: 5px;
+    width: 200px;
+    overflow: auto;
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: 20;
+    text-overflow: ellipsis;
+    text-align: justify;
+    margin-left: 10px;
+  }

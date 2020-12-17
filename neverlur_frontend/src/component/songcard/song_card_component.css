@@ -1,0 +1,102 @@
+:root {
+    --primary:  rgb(32, 34, 37);;
+    --secondary: rgb(47, 49, 54);
+    --tertiary:  hsl(232,18%,55%,100%);
+    --quarternary: rgba(203, 139, 255, 0.911);
+    --quinary: rgb(249, 246, 243);
+}
+
+
+.song_container {
+    display: grid;
+    width: 350px;
+    grid-template-columns: 350px;
+    grid-template-rows: 170px 100px 80px;
+    grid-template-areas: "image" "text" "stats";
+    font-family: sans-serif;
+    border-radius: 15px;
+    background: var(--secondary);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    text-align: center;
+    color: var(--quinary);
+    font-family: 'Skranji';
+    transition: 0.5s ease;
+    cursor: pointer;
+    margin:45px;
+    margin-top: 90px;
+}
+
+.card-image{
+    grid-area: image;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card-image img{
+    max-width:350px;
+    max-height: 350px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    opacity: 0.85;
+}
+.card-text-container{
+    grid-area:text;
+    margin:25px;
+    color: var(--quarternary) !important;
+}
+
+.song-container h4{
+    font-size: 23px;
+}
+
+.song_container:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px var(--tertiary);
+}
+
+
+/*
+.card-stats{
+    grid-area: stats;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: var(--tertiary);
+}
+
+.card-stats .stat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    color: var(--tertiary);
+}
+
+.card-stats .type {
+    font-size:11px;
+    font-weight: 300;
+}
+
+.card-stats .value {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.card-stats .border {
+    border-left: 1px solid lightskyblue;
+    border-right: 1px solid lightskyblue;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px var(--tertiary);
+}
+
+.card {
+    transition: 0.5s ease;
+    cursor: pointer;
+    margin:30px;
+}*/

@@ -1,0 +1,53 @@
+:root {
+    --primary: rgb(1, 10, 19);
+    --secondary: rgb(1, 14, 21);
+    --tertiary: rgb(1, 12, 22);
+    --quarternary: rgb(5, 25, 39);
+    --quinary: rgb(7, 31, 45);
+    --senary: rgb(7,40,55);
+    --septenary: rgb(8, 49, 63);
+    
+    --gold_border_edge: rgb(186, 141, 66);
+    --gold_border_interior_edge: rgb(115, 105, 65);
+    --gold_border_interior: rgb(80, 69, 32);
+  
+    --contrast_bright_blue_lighter: rgb(62, 213, 255);
+    --contrast_bright_blue_medium: rgb(52, 182, 254);
+    --contrast_bright_blue_darker: rgb(37, 164, 254);
+  
+    --darker_base: rgb(23, 29, 28);
+  }
+
+.btn {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 7px 21px;
+    border-radius: 3px;
+}
+
+.btn--primary{
+    background-color: var(--contrast_bright_blue_lighter);
+    color: var(--contrast_bright_blue_lighter);
+    border: 1px solid var(--contrast_bright_blue_lighter);
+}
+
+.btn-outline{
+    background-color: var(--gold_border_interior);
+    color: var(--contrast_bright_blue_lighter);
+    padding: 7px 21px;
+    border: 1px solid var(--gold_border_edge);
+    transition: all 0.3s ease-out;
+}
+
+.btn-large{
+    padding: 10px 24px;
+    font-size: 18px;
+}
+
+.btn-medium{
+    padding: 7px 21px;
+    font-size: 18px;
+}
+
+

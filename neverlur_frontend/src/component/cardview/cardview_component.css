@@ -1,0 +1,28 @@
+:root {
+    --primary: rgb(1, 10, 19);
+    --secondary: rgb(1, 14, 21);
+    --tertiary: rgb(1, 12, 22);
+    --quarternary: rgb(5, 25, 39);
+    --quinary: rgb(7, 31, 45);
+    --senary: rgb(7,40,55);
+    --septenary: rgb(8, 49, 63);
+    
+    --gold_border_edge: rgb(186, 141, 66);
+    --gold_border_interior_edge: rgb(115, 105, 65);
+    --gold_boder_interior: rgb(80, 69, 32);
+  
+    --contrast_bright_blue_lighter: rgb(62, 213, 255);
+    --contrast_bright_blue_medium: rgb(52, 182, 254);
+    --contrast_bright_blue_darker: rgb(37, 164, 254);
+  
+    --darker_base: rgb(23, 29, 28);
+  }
+
+  .cardview-container{
+    z-index: 5;
+  }
+  
+  .cardview-container h2{
+    font-size: 120px;
+    color: whitesmoke;
+  }

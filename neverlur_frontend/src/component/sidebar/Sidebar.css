@@ -1,0 +1,140 @@
+:root {
+    --primary: rgb(1, 10, 19);
+    --secondary: rgb(1, 14, 21);
+    --tertiary: rgb(1, 12, 22);
+    --quarternary: rgb(5, 25, 39);
+    --quinary: rgb(7, 31, 45);
+    --senary: rgb(7,40,55);
+    --septenary: rgb(8, 49, 63);
+    
+    --gold_border_edge: rgb(186, 141, 66);
+    --gold_border_interior_edge: rgb(115, 105, 65);
+    --gold_border_interior: rgb(80, 69, 32);
+  
+    --contrast_bright_blue_lighter: rgb(62, 213, 255);
+    --contrast_bright_blue_medium: rgb(52, 182, 254);
+    --contrast_bright_blue_darker: rgb(37, 164, 254);
+  
+    --darker_base: rgb(23, 29, 28);
+  }
+  
+
+.sidebar-container {
+  width: 200px;
+  height: 100%;
+  background: var(--darker_base);
+  padding-top: 20px;
+  float:right;
+  z-index: 3;
+  color: whitesmoke;
+  white-space: nowrap;
+}
+
+.sidebar-container li { 
+    width: 190px;
+    padding-right: 20px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    display: block;
+  }
+
+.active{
+    border-right: 2px solid whitesmoke;
+    padding-right: 10px;
+}
+
+.new-playlist {
+    height: 30px;
+    font-size: 21px;
+    border-radius: 15px;
+}
+
+.new-playlist:hover{
+    transform: scale(1.05);
+    transition: 0.2s ease-in;
+    box-shadow: 5px 5px 15px whitesmoke;
+}
+
+.new-group:hover{
+  transform: scale(1.05);
+  transition: 0.2s ease-in;
+  box-shadow: 5px 5px 15px whitesmoke;
+}
+
+.new-playlist i {
+    padding-right: 7px;
+    padding-left: 14px;
+  }
+
+.new-playlist span {
+    font-size: 21px;
+}
+
+.new-group {
+    height: 30px;
+    font-size: 21px;
+    border-radius: 15px;
+}
+
+.new-group:hover{
+    transform: scale(1.05);
+    transition: 0.2s ease-in;
+    box-shadow: 5px 5px 15px whitesmoke;
+}
+
+.new-group i {
+    padding-right: 7px;
+    padding-left: 14px;
+  }
+
+.new-group span {
+    font-size: 21px;
+}
+
+
+.sidebar-container.li.new-playlist i {
+    font-size: 32px;  
+    margin-right: 10px;
+    color:whitesmoke;
+    transform: translateY(1px);
+    }
+
+.li.new-playlist span {
+      font-size: 28px;
+      font-weight: 300;
+      color:whitesmoke;
+    }
+
+.form button {
+      background-color: #2bcc6c;
+      color: white;
+      padding: 12.5px 30px;
+      border-radius: 25px;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 13px;
+      border: none;
+      cursor: pointer;
+    }
+
+.title {
+      margin: 0;
+      margin-bottom: 35px;
+    }
+
+.input {
+      margin-bottom: 20px;
+      height: 35px;
+      padding-left: 8px;
+      font-size: 16px;
+      width: 100%;
+      color: black;
+    }
+
+.content-wrap {
+      margin: 0px auto;
+      max-width: 250px;
+      text-align: center;
+    }

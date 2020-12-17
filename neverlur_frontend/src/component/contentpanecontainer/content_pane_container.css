@@ -1,0 +1,51 @@
+:root {
+    --primary: rgb(1, 10, 19);
+    --secondary: rgb(1, 14, 21);
+    --tertiary: rgb(1, 12, 22);
+    --quarternary: rgb(5, 25, 39);
+    --quinary: rgb(7, 31, 45);
+    --senary: rgb(7,40,55);
+    --septenary: rgb(8, 49, 63);
+    
+    --gold_border_edge: rgb(186, 141, 66);
+    --gold_border_interior_edge: rgb(115, 105, 65);
+    --gold_boder_interior: rgb(80, 69, 32);
+  
+    --contrast_bright_blue_lighter: rgb(62, 213, 255);
+    --contrast_bright_blue_medium: rgb(52, 182, 254);
+    --contrast_bright_blue_darker: rgb(37, 164, 254);
+  
+    --darker_base: rgb(23, 29, 28);
+
+    --primary_contrast: hex(0x03544e);
+  }
+
+  .background-container {
+    background-image: linear-gradient(to top left, var(--darker_base), var(--darker_base), var(--darker_base),var(--darker_base), var(--darker_base),var(--darker_base),var(--darker_base),var(--darker_base),var(--primary), var(--secondary));
+    z-index: -1;
+    position: absolute;
+  }
+
+  .sidebar-pane-container {
+    z-index: 3;
+    opacity: 0.5;
+    width: 200px;
+    height: 100%;
+    top: 100px;
+    right:0;
+    position: absolute;
+    background: var(--darker_base);
+    padding-top: 20px;
+    float:right;
+  }
+
+  .content-pane-container {
+    z-index: 2;
+    width: 85vw;
+    height: 90vh;
+    left: 120px;
+    top: 90px;
+    background: rgba(0,0,0,0);
+    margin: auto;
+    padding: 15vh 0;
+  }
